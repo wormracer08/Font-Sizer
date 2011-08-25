@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Font Sizer - A jQuery Plugin</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.fontSizer.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {			
+		$('ul#controls a').fontSizer();
+	});
+</script>
+<style type="text/css">
+body, html {
+	margin:0;
+	padding:0;
+	font-size:14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.clear-both { clear:both; }
+#wrap {
+	width:500px;
+	height:auto;
+	margin:0 auto;	
+}
+h1 { text-align:center; }
+</style>
+</head>
+
+<body>
+    <div id="wrap">	
+        <h1>Font Sizer Plugin</h1>
+        <div id="control-wrap"></div>
+		<div class="fs-text">
+        <h2>What it does?</h2>
+        <p>Font sizer is a highly configurable, unobtrusive jQuery plugin that allows users to adjust the font size of specific area(s) of text on your website. It's lightweight, easy to configure and adds a nice bit of functionality to your blog, forum or news site.</p>
+    
+        <h2>How to use Font Sizer?</h2>
+        <p>Font Sizer requires very little markup to be added to your exsisting pages.  At a minimum you'll need a container div element to hold the sizing controls and you'll need to wrap the text that can be resized in a div element.</p>
+        <h3>Required Dependencies</h3>
+        <ul>
+        	<li>Add the &quot;fontSizer&quot; folder to your site root</li>
+        	<li>Include jQuery 1.3.x or higher in the document head</li>
+            <li>Include jquery.fontSizer.js in the document head</li>
+            <li>Included stylesheet or append styles to existing css</li>
+        </ul>    
+        <h3>Basic XHTML markup</h3>
+        <img src="images/basic_markup.png" height="83" width="395" alt="Basic XHTML markup example" />     
+    	<h3>CSS</h3>
+        <img src="images/required_css.png" height="227" width="181" alt="Required CSS styles" />
+        <h3>Default usage</h3>
+        <img src="images/default_usage.png" height="80" width="276" alt="Default plugin usage" />
+        <h2>Default Options</h2>         
+        <p>Below are the default values provide by the plugin. These values can be overridden by passing an options object to the fontSizer() method, but overriding these values is not required for the plugin to work.</p>
+        <img src="images/default_options.png" height="214" width="368" alt="Plugin options and default values" />
+        <h2>Override Defaults</h2>
+        <img src="images/advanced_options.png" height="160" width="326" alt="Override default options usage example" />
+        <p>If you prefer to use your own controls instead of the plugins, simple override the controls value by passing false or 0 to the fontSizer() method.</p>
+        <img src="images/custom_controls.png" height="79" width="482" alt="Using your own controls" />
+        <h2>Lots of other options that need to be documented here...</h2>
+		</div>
+    </div>
+</body>
+</html>

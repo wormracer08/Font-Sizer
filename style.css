@@ -1,0 +1,15 @@
+#controls {	
+	float:right; 
+}
+
+#controls li {
+	float:left;
+	display:block;
+	list-style-type:none;
+	margin-right:5px;	
+}
+
+a#fs-minus, a#fs-plus {
+	outline: 0 none;	
+}
+
